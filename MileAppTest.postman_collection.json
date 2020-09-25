@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "af5b126f-c75a-4526-91a6-855d2402cefe",
+		"name": "MileAppTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET Package",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/package",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"package"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Package By ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/package/1",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"package",
+						"1"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST ",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \"amount\":1,\n\"discount\":1,\n\"additional_field\":\"mmm\",\n\"payment_type\":1,\n\"state\":1,\n\"code\":1,\n\"order_id\":1,\n\"organization_id\":1,\n\"payment_type_name\":\"maria\",\n\"cash_amount\":1,\n\"cash_charge\":1,\n\"customer_origin\":1,\n\"customer_destination\":1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/package",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"package"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/package/1",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"package",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \"amount\":1,\n    \"discount\":1,\n    \"additional_field\":\"mmm\",\n    \"payment_type\":1,\n    \"state\":1,\n    \"code\":1,\n    \"order_id\":1,\n    \"organization_id\":1,\n    \"location_id\":1,\n    \"payment_type_name\":\"maria\",\n    \"cash_amount\":1,\n    \"cash_charge\":1,\n    \"customer_origin\":1,\n    \"customer_destination\":1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/package/1",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"package",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
