@@ -9,6 +9,6 @@ How to instal
 3. php artisan serve
 
 terdapat postman collection dan environment untuk dokumentasi API
-dan database collection
+dan database collection.
 
 Terimakasih
