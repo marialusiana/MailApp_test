@@ -11,4 +11,4 @@ How to instal :
 terdapat postman collection dan environment untuk dokumentasi API
 dan database collection.
 
-Terimakasih
+Terimakasih.
