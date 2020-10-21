@@ -78,17 +78,12 @@ class TransactionController extends Controller
         $transaction_new = new Paginator($all_transaction->forPage($page, $perPage), $all_transaction->count(), $perPage, $page, [
             'path' => url("api/package")
         ]); 
-
-       
-
         return Response::success($transaction_new);
-
 
     }
 
     public function store(Request $request)
     {
-        
         $validator = Validator::make($request->all(), 
         [
             'amount'            => 'required|integer',
@@ -113,7 +108,6 @@ class TransactionController extends Controller
             return $response;
         }else{
         //process the request
-
             DB::beginTransaction();
             try {  
                 // create transaction
@@ -299,7 +293,7 @@ class TransactionController extends Controller
     public function delete($id)
     {    
         $transaction = Transaction::where('id',$id)->first();
-
+        //jika ada transaction delete
         if($transaction){
             $transaction = $transaction->delete();
         }
